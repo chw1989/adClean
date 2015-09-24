@@ -1,0 +1,30 @@
+{
+  "name": "广告清理",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "清理页面广告",
+
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["clean.js"]
+  }],  
+
+  "permissions": [
+    "tabs", 
+    "cookies", 
+    "*://*/*"
+  ],
+
+  "icons": 
+  { 
+    "48": "icon48.png",
+	  "128": "icon128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "页面广告清除插件  By:老晁",
+	  "default_popup": "popup.html"
+  }
+
+}
