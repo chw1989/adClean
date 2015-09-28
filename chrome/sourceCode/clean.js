@@ -9,12 +9,12 @@ function debugLog(logString)
 
 function divPolicy()
 {
-    return /cproIframe|baidu|google|ad_left|ad_right|sinaad/i;
+    return /cproIframe|baidu|google|ad_left|ad_right|sinaad|gg|fix_floater/i;
 }
 
 function insPolicy()
 {
-    return /sinaad|google|regGuideLayer/i;
+    return /sinaad|google|regGuideLayer|aswift/i;
 }
 
 function containsAd(element)
